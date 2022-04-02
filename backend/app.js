@@ -80,7 +80,7 @@ router.post('/api/cklogin', body(), async (ctx) => {
 
 router.get('/api/userinfo', async (ctx) => {
   const query = ctx.query;
-  const eid = query.eid;
+  const eid = parseInt(query.eid);
   const user = new User({ eid });
   const data = await user.getUserInfoByEid();
   ctx.body = { data };
@@ -126,7 +126,7 @@ router.post('/api/WSCKLogin', body(), async (ctx) => {
 
 router.get('/api/WSCKUserinfo', async (ctx) => {
   const query = ctx.query;
-  const wseid = query.wseid;
+  const wseid = parseInt(query.wseid);
   const user = new User({ wseid });
   const data = await user.getWSCKUserInfoByEid();
   ctx.body = { data };
