@@ -158,7 +158,7 @@ QL_URL=http://localhost:5700
 - `NINJA_PORT`: Ninja 运行端口（默认 `5701`）
 - `NINJA_NOTIFY`: 是否开启通知功能（默认 `true`）
 - `NINJA_UA`: 自定义 UA，默认为随机
-- 
+- `QL_DIR`: ql数据目录位置 （默认 `/ql`） 青龙v2.12.0以上需要`/ql/data`
 
 配置方式：
 

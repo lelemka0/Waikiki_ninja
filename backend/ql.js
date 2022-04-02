@@ -1,7 +1,7 @@
 'use strict';
 
 const got = require('got');
-require('dotenv').config();
+require('dotenv').config({ override: true });
 const { readFile } = require('fs/promises');
 const path = require('path');
 
